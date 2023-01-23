@@ -1,0 +1,29 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300,300italic,400,700,700italic);
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+body,
+h1,div,
+span,
+a,
+button {
+  font-family: 'Lato', 'Open Sans', 'Helvetica Neue', 'Segoe UI', Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+}
+
+.menu {
+    height: 4em;
+    background-color: #677ae4;
+    background-color: #05526A;
+    background-color: #e46855;
+  }
+  
+  .menu h1 {
+    position: relative;
+    padding: 5px 0 0 8px;
+    color: #f9f9f9;
+    font-size: 1.8em;
+    font-style: italic;
+  }

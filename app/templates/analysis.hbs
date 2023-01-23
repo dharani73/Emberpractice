@@ -1,0 +1,24 @@
+<h2 class="text">Fruit Table</h2>
+<div class="container">
+    <table class="table">
+        <thead>
+            <tr>
+      <th scope="col">SNO</th>
+      <th scope="col">FruitName</th>
+      <th scope="col">Quantity</th>
+      <th scope="col">Price</th>
+    </tr>
+        </thead>
+        <tbody>
+            {{#each @model as |fruit index|}}
+            <tr>
+                <td>{{index}}</td>
+                <td {{on 'click' (fn this.showMyName FruitName)}}>{{fruit.name}}</td>
+                <td>{{fruit.quantity}}</td>
+                <td>{{fruit.price}}</td>
+            </tr>
+
+            {{/each}}
+        </tbody>
+    </table>
+</div>
